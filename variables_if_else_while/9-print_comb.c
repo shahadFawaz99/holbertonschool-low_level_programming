@@ -18,3 +18,4 @@ putchar(' ');  // Print a space
 }
 putchar('\n');  // Print a new line at the end
 return (0);
+}
