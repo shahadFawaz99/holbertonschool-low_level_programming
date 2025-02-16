@@ -6,16 +6,16 @@
 */
 int main(void)
 {
-int i;
-for (i = 0; i < 10; i++)
+int num;
+for (num = 0; num <= 9; num++)
 {
-putchar(i + '0');
-if (i < 9)
+putchar(num + '0');
+if (num != 9)
 {
 putchar(',');
 putchar(' ');
 }
 }
 putchar('\n');
-return (0);  // Make sure to include parentheses around the return value
+return (0);
 }
