@@ -9,4 +9,5 @@ int print_last_digit(int n);
 void jack_bauer(void);
 void times_table(void); /* Function prototype for times_table */
 int add(int, int); /* Function prototype for add */
+void print_to_98(int n);
 #endif /* MAIN_H */
