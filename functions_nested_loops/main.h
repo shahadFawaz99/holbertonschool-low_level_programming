@@ -14,5 +14,5 @@ void print_to_98(int n);
 
 /* إضافة التصريح لدالة print_times_table */
 void print_times_table(int n);
-
+int sum_multiples_of_3_and_5(void);
 #endif /* MAIN_H */
