@@ -1,6 +1,5 @@
-#include "main.h"
-
-void reset_to_98(int *n)
-{
-    *n = 98;  // تحديث القيمة التي يشير إليها المؤشر إلى 98
-}
+#ifndef MAIN_H
+#define MAIN_H
+#include <stdio.h>
+void reset_to_98(int *n);
+#endif
