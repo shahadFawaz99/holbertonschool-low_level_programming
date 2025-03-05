@@ -1,12 +1,13 @@
 #include "main.h"
 #include <stddef.h>  /* إضافة هذه السطر لتعريف NULL */
 /**
-* _strpbrk - Searches a string for any of a set of bytes.
-* @s: The string to be scanned.
-* @accept: The set of bytes to be searched for in s.
+*_strpbrk - Searches a string for any of a set of bytes.
+*@s: The string to be scanned.
+*@accept: The set of bytes to be searched for in s.
 *
-* Return: A pointer to the first occurrence in s of any of the bytes in accept,
-* or NULL if no such byte is found.
+*Return: A pointer to the first occurrence in s of any of the bytes
+*in accept,
+*or NULL if no such byte is found.
 */
 char *_strpbrk(char *s, char *accept)
 {
