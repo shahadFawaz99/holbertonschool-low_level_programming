@@ -3,7 +3,7 @@ char *_memset(char *s, char b, unsigned int n)
 unsigned int i;
 for (i = 0; i < n; i++)
 {
-s[i] = b;  /* ملء الذاكرة بالبايت b */
+s[i] = b;
 }
-return (s);  /* إرجاع نفس المؤشر مع الأقواس حول السطر */
+return (s);    
 }
