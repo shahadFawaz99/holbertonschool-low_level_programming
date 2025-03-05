@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>  /* لضمان تعريف NULL */
 /**
 * _strchr - Locates a character in a string.
 * @s: Pointer to the string.
