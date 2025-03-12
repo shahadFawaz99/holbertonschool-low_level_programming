@@ -6,7 +6,7 @@
 * @name: name of the dog
 * @age: age of the dog
 * @owner: owner of the dog
-* 
+*
 * Return: pointer to the newly created dog, or NULL if failed
 */
 dog_t *new_dog(char *name, float age, char *owner)
@@ -29,7 +29,7 @@ if (new_dog->name == NULL)
 {
 free(new_dog);  /* Free previously allocated memory */
 return (NULL);
- }
+}
 /* Manually copy the name */
 for (i = 0; i < name_len; i++)
 new_dog->name[i] = name[i];
