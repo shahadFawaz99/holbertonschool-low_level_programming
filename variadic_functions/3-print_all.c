@@ -12,25 +12,23 @@ char *str, *sep = "";
 va_start(args, format);
 while (format && format[i])
 {
-if (format[i] == 'c')
-printf("%s%c", sep, va_arg(args, int));
-else if (format[i] == 'i')
-printf("%s%d", sep, va_arg(args, int));
-else if (format[i] == 'f')
-printf("%s%f", sep, va_arg(args, double));
-else if (format[i] == 's')
+if (format[i] == 'c' || format[i] == 'i' ||
+format[i] == 'f' || format[i] == 's')
 {
-str = va_arg(args, char *);
-if (!str)
-str = "(nil)";
-printf("%s%s", sep, str);
-}
+printf("%s", sep);
+if (format[i] == 'c')
+printf("%c", va_arg(args, int));
+else if (format[i] == 'i')
+printf("%d", va_arg(args, int));
+else if (format[i] == 'f')
+printf("%f", va_arg(args, double));
 else
 {
-i++;
-continue;
+str = va_arg(args, char *);
+printf("%s", str ? str : "(nil)");
 }
 sep = ", ";
+}
 i++;
 }
 va_end(args);
